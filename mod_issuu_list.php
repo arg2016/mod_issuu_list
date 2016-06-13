@@ -1,6 +1,7 @@
 <?php
 defined('_JEXEC') or die;
 require_once dirname(__FILE__) . '/helper.php';
+$publicaciones= modIssuuListHelper::getPublicationsList();
 
 
-require JModuleHelper::getLayoutPath('mod_isuu_list', $params->get('layout','default'));
+require JModuleHelper::getLayoutPath('mod_issuu_list', $params->get('layout','default'));
